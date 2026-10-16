@@ -1,0 +1,5 @@
+Nightcap ist der neue Name von Sleep Timer (erste öffentliche Version, App-ID com.plainapps.nightcap).
+• Blendet die Lautstärke aus, pausiert zur gewählten Zeit und stellt deine Lautstärke wieder her.
+• Benannte Voreinstellungen, Tasten in der Benachrichtigung (−5, +15, Jetzt beenden), Kachel, Widget, Verknüpfungen.
+• Optional: Schütteln zum Verlängern, Bildschirm sperren, Nicht stören bis zum Morgen, Schlafenszeit-Lautstärke, nächtlicher Start, Gute-Nacht-Dimmen.
+• Keine Werbung, kein Konto, keine Internetberechtigung.

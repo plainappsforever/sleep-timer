@@ -1,6 +1,4 @@
 # .oss-scrub-allow - findings of scripts/oss/scrub-check.sh that a human checked and accepts (public file, no values).
 # Reviewed 2026-10-16 for the first public source release.
-P-PKGID README.md             # placeholder app id com.tim.*: the identifier changes before the first store release
-P-PKGID app/build.gradle.kts  # placeholder app id com.tim.*: the identifier changes before the first store release
-P-PKGID app/src/*             # placeholder app id com.tim.*: the identifier changes before the first store release
-P-PKGID fdroid/*              # placeholder app id com.tim.*: the identifier changes before the first store release
+# 2026-10-16: the placeholder app id the former placeholder id was renamed to com.plainapps.nightcap (DECISIONS D54); the
+# P-PKGID acceptances are no longer needed. Nothing is currently accepted here.

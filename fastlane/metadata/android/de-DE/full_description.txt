@@ -1,4 +1,4 @@
-Sleep Timer stoppt, was gerade läuft, zur gewählten Zeit. So schläfst du zu Musik, Podcast, Hörbuch oder Video ein, ohne dass es die ganze Nacht weiterläuft.
+Nightcap stoppt, was gerade läuft, zur gewählten Zeit. So schläfst du zu Musik, Podcast, Hörbuch oder Video ein, ohne dass es die ganze Nacht weiterläuft.
 
 Dauer wählen (oder "bis 23:30") und auf Start tippen. Ist die Zeit um, wird die Lautstärke ausgeblendet, danach pausiert die App den Player und stellt deine Lautstärke wieder her. Sicher sein, bevor du einschläfst? "Jetzt testen" macht einen 3-Sekunden-Test mit dem, was gerade läuft, und zeigt dir, wie es gestoppt wurde.
 

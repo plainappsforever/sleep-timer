@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Sleep Timer Trial</string>
+    <string name="app_name">Nightcap</string>
 
     <string name="footer_privacy">No ads. Nothing leaves your phone.</string>
     <string name="link_settings">Settings</string>
@@ -68,31 +68,31 @@
     <string name="settings_screen_off_sooner_body">Used when locking is off or not available: sets the screen timeout to 15 s after the pause and puts yours back once the screen is off.</string>
     <string name="settings_enhanced">Enhanced compatibility</string>
     <string name="settings_enhanced_body">For players that ignore the normal pause: pauses every playing app directly before trying the usual way.</string>
-    <string name="access_lost_accessibility">Turned off: accessibility access for Sleep Timer is off. Turn screen off sooner still works without it.</string>
-    <string name="access_lost_listener">Turned off: notification access for Sleep Timer is off. The normal pause is used.</string>
-    <string name="access_lost_write">Turned off: Modify system settings is not allowed for Sleep Timer.</string>
+    <string name="access_lost_accessibility">Turned off: accessibility access for Nightcap is off. Turn screen off sooner still works without it.</string>
+    <string name="access_lost_listener">Turned off: notification access for Nightcap is off. The normal pause is used.</string>
+    <string name="access_lost_write">Turned off: Modify system settings is not allowed for Nightcap.</string>
     <string name="access_not_granted_accessibility">Not turned on: accessibility access was not allowed.</string>
     <string name="access_not_granted_listener">Not turned on: notification access was not allowed.</string>
     <string name="access_not_granted_write">Not turned on: Modify system settings was not allowed.</string>
 
     <string name="access_title_accessibility">Lock screen at end</string>
-    <string name="access_body_accessibility">Sleep Timer uses Android\'s accessibility service only to lock the screen when a timer ends and, if you turn it on, to go to the Home screen first. If you turn on Goodnight, it also uses it to draw a dark (optionally warm) layer over the screen and to lower the screen brightness through that layer.\n\nIt reads nothing on your screen, sees nothing you type, and sends nothing anywhere. The app has no internet access.\n\nThe screen is locked the same way the power button locks it, so your usual unlock (fingerprint, face, PIN) stays the same.\n\nNext: Android opens Accessibility settings. Tap Sleep Timer Trial there and turn it on. You can turn it off there at any time.</string>
-    <string name="access_hint_accessibility">If the switch there is greyed out (app installed from a file), open App info for Sleep Timer Trial, tap ⋮, choose Allow restricted settings, then try again.</string>
+    <string name="access_body_accessibility">Nightcap uses Android\'s accessibility service only to lock the screen when a timer ends and, if you turn it on, to go to the Home screen first. If you turn on Goodnight, it also uses it to draw a dark (optionally warm) layer over the screen and to lower the screen brightness through that layer.\n\nIt reads nothing on your screen, sees nothing you type, and sends nothing anywhere. The app has no internet access.\n\nThe screen is locked the same way the power button locks it, so your usual unlock (fingerprint, face, PIN) stays the same.\n\nNext: Android opens Accessibility settings. Tap Nightcap there and turn it on. You can turn it off there at any time.</string>
+    <string name="access_hint_accessibility">If the switch there is greyed out (app installed from a file), open App info for Nightcap, tap ⋮, choose Allow restricted settings, then try again.</string>
     <string name="access_title_listener">Enhanced compatibility</string>
-    <string name="access_body_listener">Some players ignore the normal pause. With notification access, Sleep Timer can see which apps are playing and pause them directly when a timer ends.\n\nAndroid calls this Notification access, but Sleep Timer never reads, stores or reacts to your notifications. It only looks at whether each media player is playing, and sends nothing anywhere.\n\nNext: Android opens the Notification access page. Allow it for Sleep Timer Trial. You can turn it off there at any time.</string>
-    <string name="access_hint_listener">If the switch there is greyed out (app installed from a file), open App info for Sleep Timer Trial, tap ⋮, choose Allow restricted settings, then try again.</string>
+    <string name="access_body_listener">Some players ignore the normal pause. With notification access, Nightcap can see which apps are playing and pause them directly when a timer ends.\n\nAndroid calls this Notification access, but Nightcap never reads, stores or reacts to your notifications. It only looks at whether each media player is playing, and sends nothing anywhere.\n\nNext: Android opens the Notification access page. Allow it for Nightcap. You can turn it off there at any time.</string>
+    <string name="access_hint_listener">If the switch there is greyed out (app installed from a file), open App info for Nightcap, tap ⋮, choose Allow restricted settings, then try again.</string>
     <string name="access_title_write">Turn screen off sooner</string>
-    <string name="access_body_write">When a timer ends, Sleep Timer sets your screen timeout to 15 seconds, so the screen turns off soon after the pause. As soon as the screen is off, your own timeout is put back. If you change the timeout yourself in between, your choice is kept.\n\nNext: Android opens Modify system settings. Allow it for Sleep Timer Trial. You can turn it off there at any time.</string>
+    <string name="access_body_write">When a timer ends, Nightcap sets your screen timeout to 15 seconds, so the screen turns off soon after the pause. As soon as the screen is off, your own timeout is put back. If you change the timeout yourself in between, your choice is kept.\n\nNext: Android opens Modify system settings. Allow it for Nightcap. You can turn it off there at any time.</string>
     <string name="access_agree">Agree and open settings</string>
     <string name="access_cancel">Cancel</string>
 
     <string name="preset_lock">Lock screen at end</string>
-    <string name="preset_lock_needs_access">Not active: accessibility access for Sleep Timer is off. Choose On again to allow it.</string>
+    <string name="preset_lock_needs_access">Not active: accessibility access for Nightcap is off. Choose On again to allow it.</string>
     <string name="notification_status_screen_off">Screen turns off soon · then your screen timeout comes back</string>
     <string name="try_result_session">Paused %1$s ✓ (session)</string>
 
     <string name="accessibility_service_summary">Locks the screen when a sleep timer ends.</string>
-    <string name="accessibility_service_description">Lets Sleep Timer lock the screen (and go to the Home screen first, if you choose) when a timer ends, and draw a dark layer if you turn on Goodnight. It does not read or record anything on your screen.</string>
+    <string name="accessibility_service_description">Lets Nightcap lock the screen (and go to the Home screen first, if you choose) when a timer ends, and draw a dark layer if you turn on Goodnight. It does not read or record anything on your screen.</string>
 
     <!-- v2 P5: start of timer (DND, bedtime volume) and automatic start -->
     <string name="settings_start_of_timer">Start of timer</string>
@@ -109,11 +109,11 @@
     <string name="settings_schedule_no_days">Choose at least one day.</string>
     <string name="settings_about_access_dnd">Do Not Disturb access: turns on your Do Not Disturb when a timer starts, until the morning time you set (at most 9 hours).</string>
     <string name="access_title_dnd">Do Not Disturb at start</string>
-    <string name="access_body_dnd">When a timer starts, Sleep Timer turns on Do Not Disturb with its own rule called \"Sleep timer\". It uses your own priority settings, so your alarm still rings and the callers you allow still get through. It turns off at the morning time you choose (at most 9 hours after the start), or when you tap End Do Not Disturb.\n\nSleep Timer never reads your notifications and sends nothing anywhere.\n\nNext: Android opens Do Not Disturb access (called Modes access on newer Android). Allow it for Sleep Timer Trial. You can turn it off there at any time.</string>
-    <string name="access_lost_dnd">Turned off: Do Not Disturb (Modes) access for Sleep Timer is off.</string>
+    <string name="access_body_dnd">When a timer starts, Nightcap turns on Do Not Disturb with its own rule called \"Sleep timer\". It uses your own priority settings, so your alarm still rings and the callers you allow still get through. It turns off at the morning time you choose (at most 9 hours after the start), or when you tap End Do Not Disturb.\n\nNightcap never reads your notifications and sends nothing anywhere.\n\nNext: Android opens Do Not Disturb access (called Modes access on newer Android). Allow it for Nightcap. You can turn it off there at any time.</string>
+    <string name="access_lost_dnd">Turned off: Do Not Disturb (Modes) access for Nightcap is off.</string>
     <string name="access_not_granted_dnd">Not turned on: Do Not Disturb access was not allowed.</string>
     <string name="preset_dnd">Do Not Disturb at start</string>
-    <string name="preset_dnd_needs_access">Not active: Do Not Disturb access for Sleep Timer is off. Choose On again to allow it.</string>
+    <string name="preset_dnd_needs_access">Not active: Do Not Disturb access for Nightcap is off. Choose On again to allow it.</string>
     <string name="preset_bedtime_volume">Bedtime volume</string>
     <string name="dnd_rule_name">Sleep timer</string>
     <string name="dnd_active_until">Do Not Disturb on until %1$s</string>
@@ -148,7 +148,7 @@
     <string name="preset_goodnight">Goodnight</string>
     <string name="preset_goodnight_needs_access">Not active: Goodnight needs the accessibility access or Modify system settings. Choose On again to allow it.</string>
     <string name="access_title_write_goodnight">Goodnight</string>
-    <string name="access_body_write_goodnight">Goodnight lowers your screen brightness step by step before the timer ends. As soon as the screen is off, your own brightness and auto-brightness setting are put back. If you change the brightness yourself in between, your choice is kept.\n\nWith the accessibility access from Lock screen at end, Goodnight does not need this: it then dims through its own dark layer instead.\n\nNext: Android opens Modify system settings. Allow it for Sleep Timer Trial. You can turn it off there at any time.</string>
+    <string name="access_body_write_goodnight">Goodnight lowers your screen brightness step by step before the timer ends. As soon as the screen is off, your own brightness and auto-brightness setting are put back. If you change the brightness yourself in between, your choice is kept.\n\nWith the accessibility access from Lock screen at end, Goodnight does not need this: it then dims through its own dark layer instead.\n\nNext: Android opens Modify system settings. Allow it for Nightcap. You can turn it off there at any time.</string>
     <string name="access_lost_goodnight">Turned off: Goodnight needs the accessibility access or Modify system settings, and neither is allowed now.</string>
     <string name="access_not_granted_goodnight">Not turned on: Goodnight needs Modify system settings or the accessibility access.</string>
     <string name="notification_status_screen_off_goodnight">Screen turns off soon · then your brightness comes back</string>

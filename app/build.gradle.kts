@@ -4,15 +4,15 @@ plugins {
 }
 
 android {
-    namespace = "com.tim.sleeptimer"
+    namespace = "com.plainapps.nightcap"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.tim.sleeptimer"
+        applicationId = "com.plainapps.nightcap"
         minSdk = 26
         targetSdk = 36
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2 // plain counter, +1 for every tagged release (RELEASE_KIT section 2); 1 = 1.0 (never published)
+        versionName = "1.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -40,12 +40,18 @@ android {
         compose = true
         buildConfig = true
     }
+
+    // F-Droid reproducible builds: no Play dependency metadata (a signed blob) in the APK/AAB (RELEASE_KIT section 2).
+    dependenciesInfo {
+        includeInApk = false
+        includeInBundle = false
+    }
 }
 
 androidComponents {
     onVariants { variant ->
         variant.outputs.forEach { output ->
-            output.outputFileName.set("SleepTimerTrial-${variant.name}.apk")
+            output.outputFileName.set("Nightcap-${variant.name}.apk")
         }
     }
 }

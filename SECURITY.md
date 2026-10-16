@@ -2,12 +2,12 @@
 
 ## Supported versions
 
-Only the latest release of Sleep Timer Trial receives fixes.
+Only the latest release of Nightcap receives fixes.
 
 ## Reporting a vulnerability
 
 Please do not open a public issue. Use GitHub's private report ("Security" tab -> "Report a vulnerability")
-or e-mail plainapps@tuta.com with "SECURITY Sleep Timer Trial" in the subject. We answer within 7 days.
+or e-mail plainapps@tuta.com with "SECURITY Nightcap" in the subject. We answer within 7 days.
 
 ## Scope
 

@@ -1,4 +1,4 @@
-# Contributing to Sleep Timer Trial
+# Contributing to Nightcap
 
 Thank you for helping. Bug reports and translations are the most useful contributions.
 

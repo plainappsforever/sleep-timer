@@ -1,8 +1,8 @@
-# Sleep Timer Trial
+# Nightcap
 
 Fade out and pause music, podcasts or video at bedtime. No ads, no account.
 
-Sleep Timer stops what you are playing at the time you choose, so you can fall asleep to music, a podcast, an audiobook or a video without it running all night.
+Nightcap stops what you are playing at the time you choose, so you can fall asleep to music, a podcast, an audiobook or a video without it running all night.
 
 **Get it:** [Google Play](https://plainapps.dfdsfdsfsdf.workers.dev/apps/sleep-timer/) · [GitHub Releases](https://github.com/plainappsforever/sleep-timer/releases) ·
 [Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/plainappsforever/sleep-timer)
@@ -17,7 +17,7 @@ that changes any of this.
 
 Why we write it down: in 2023 a popular open-source Android suite was sold to an ad-funded app company and its store
 listings started saying "Contains ads"; its community had to fork it to keep a clean version. The source code of
-Sleep Timer Trial is published under GPL-3.0, so if this promise were ever broken, anyone could continue the last
+Nightcap is published under GPL-3.0, so if this promise were ever broken, anyone could continue the last
 version that kept it.
 
 ## What it does
@@ -57,8 +57,6 @@ GOOD TO KNOW
 
 ## Build from source
 
-The app identifier `com.tim.sleeptimer` is a placeholder: the identifier changes before the first store release.
-
 A native Android app (Kotlin, Gradle). You need JDK 17 and the Android SDK (Android Studio installs
 both; set `ANDROID_HOME`). Android only: there is no iOS version.
 
@@ -78,7 +76,7 @@ Certificate SHA-256 fingerprint: `not yet published on Android`
 
 ## How this app was made
 
-Sleep Timer Trial was written with substantial help from an AI coding assistant (Claude Code), directed, reviewed and
+Nightcap was written with substantial help from an AI coding assistant (Claude Code), directed, reviewed and
 tested by the maintainer. We say this openly because some stores and users care about it.
 
 ## Licence

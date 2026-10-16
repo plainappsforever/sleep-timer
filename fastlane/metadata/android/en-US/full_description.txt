@@ -1,4 +1,4 @@
-Sleep Timer stops what you are playing at the time you choose, so you can fall asleep to music, a podcast, an audiobook or a video without it running all night.
+Nightcap stops what you are playing at the time you choose, so you can fall asleep to music, a podcast, an audiobook or a video without it running all night.
 
 Pick a duration (or "until 23:30") and tap Start. When the time is up, the volume fades down, then the app pauses the player, then it puts your volume back. Want to be sure before you fall asleep? "Try it now" runs a 3-second test on whatever is playing and tells you how it was stopped.
 

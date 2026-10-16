@@ -7,12 +7,12 @@
             android:name=".debug.DebugCommandReceiver"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.tim.sleeptimer.debug.START" />
-                <action android:name="com.tim.sleeptimer.debug.SET" />
-                <action android:name="com.tim.sleeptimer.debug.STOP" />
-                <action android:name="com.tim.sleeptimer.debug.ACTION" />
-                <action android:name="com.tim.sleeptimer.debug.DUMP" />
-                <action android:name="com.tim.sleeptimer.debug.VOLUME" />
+                <action android:name="com.plainapps.nightcap.debug.START" />
+                <action android:name="com.plainapps.nightcap.debug.SET" />
+                <action android:name="com.plainapps.nightcap.debug.STOP" />
+                <action android:name="com.plainapps.nightcap.debug.ACTION" />
+                <action android:name="com.plainapps.nightcap.debug.DUMP" />
+                <action android:name="com.plainapps.nightcap.debug.VOLUME" />
             </intent-filter>
         </receiver>
     </application>
