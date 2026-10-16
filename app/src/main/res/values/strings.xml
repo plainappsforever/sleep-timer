@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sleep Timer Trial</string>
+
+    <string name="footer_privacy">No ads. Nothing leaves your phone.</string>
+    <string name="link_settings">Settings</string>
+
+    <string name="start_button">Start</string>
+    <string name="stop_button">Stop</string>
+    <string name="try_it_now">Try it now</string>
+    <string name="until_label">Until</string>
+
+    <string name="notification_channel_timer_name">Timer</string>
+    <string name="notification_channel_result_name">Result</string>
+    <string name="notification_action_extend">+%1$d min</string>
+    <string name="notification_action_reduce">−%1$d min</string>
+    <string name="notification_action_end_now">End now</string>
+    <string name="notification_action_stop">Stop</string>
+    <string name="notification_action_restore">Restore volume</string>
+    <string name="notification_status_running">Ends %1$s · %2$s</string>
+    <string name="notification_status_fading">Fading · will pause whatever is playing</string>
+    <string name="notification_extended">Still awake? Extended to %1$s</string>
+    <string name="notification_paused">Paused at %1$s</string>
+    <string name="notification_muted">Couldn\'t pause; muted instead. Tap Restore volume, or it comes back by itself at %1$s if nothing is playing then.</string>
+
+    <string name="permission_notifications_denied">Notifications are off. The timer will still run, but you won\'t see the countdown or controls.</string>
+    <string name="permission_open_settings">Open settings</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_fade">Fade length</string>
+    <string name="settings_extend">Extend step</string>
+    <string name="settings_mute_fallback">Mute if pausing fails</string>
+    <string name="settings_restore_volume">Restore volume after pause</string>
+    <string name="settings_still_awake">Still awake</string>
+    <string name="settings_shake">Shake to extend</string>
+    <string name="settings_shake_body">In the last 5 minutes and during the fade, shake the phone twice to add %1$d min. The phone buzzes once to confirm. Keeps the processor awake for those minutes only.</string>
+    <string name="settings_presets">Presets</string>
+    <string name="settings_presets_edit">Edit</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_about">About</string>
+    <string name="settings_about_body">No ads, no network. Media is paused with the media button and audio focus. Special access only if you turn on a feature that needs it:</string>
+    <string name="settings_about_access_accessibility">Accessibility: locks the screen (and goes Home) when a timer ends, and draws the Goodnight dark layer. Reads nothing on your screen.</string>
+    <string name="settings_about_access_listener">Notification access: pauses playing media directly. Never reads your notifications.</string>
+    <string name="settings_about_access_write">Modify system settings: sets the screen timeout to 15 s after the pause, and (Goodnight without accessibility) lowers the brightness; puts yours back once the screen is off.</string>
+    <string name="settings_privacy_policy">Privacy policy</string>
+    <string name="settings_about_revoke">Turn any of them off in Android Settings, or with the switch here.</string>
+    <string name="settings_reliability">Reliability</string>
+    <string name="settings_reliability_notifications">Notifications</string>
+    <string name="settings_reliability_exact_alarm">Exact alarms</string>
+    <string name="settings_reliability_battery">Battery settings</string>
+
+    <string name="widget_ends">Ends %1$s</string>
+    <string name="widget_fading">Fading · pausing soon</string>
+    <string name="widget_extend">+%1$d</string>
+    <string name="shortcut_preset_deleted">Preset deleted</string>
+    <string name="settings_home_screen">Home screen</string>
+    <string name="settings_add_widget">Add widget to Home screen</string>
+    <string name="settings_add_widget_body">Start a preset, see the countdown, extend or stop without opening the app.</string>
+    <string name="preset_add_to_home">Add to Home screen</string>
+
+    <string name="settings_end_of_timer">End of timer</string>
+    <string name="settings_lock">Lock screen at end</string>
+    <string name="settings_lock_body">After the pause, turns the screen off and locks it, like pressing the power button.</string>
+    <string name="settings_lock_needs_android9">Needs Android 9 or newer. Use Turn screen off sooner instead.</string>
+    <string name="settings_home_first">Go to Home screen first</string>
+    <string name="settings_home_first_body">Leaves the video app before locking, so it can\'t start playing again when you unlock.</string>
+    <string name="settings_screen_off_sooner">Turn screen off sooner</string>
+    <string name="settings_screen_off_sooner_body">Used when locking is off or not available: sets the screen timeout to 15 s after the pause and puts yours back once the screen is off.</string>
+    <string name="settings_enhanced">Enhanced compatibility</string>
+    <string name="settings_enhanced_body">For players that ignore the normal pause: pauses every playing app directly before trying the usual way.</string>
+    <string name="access_lost_accessibility">Turned off: accessibility access for Sleep Timer is off. Turn screen off sooner still works without it.</string>
+    <string name="access_lost_listener">Turned off: notification access for Sleep Timer is off. The normal pause is used.</string>
+    <string name="access_lost_write">Turned off: Modify system settings is not allowed for Sleep Timer.</string>
+    <string name="access_not_granted_accessibility">Not turned on: accessibility access was not allowed.</string>
+    <string name="access_not_granted_listener">Not turned on: notification access was not allowed.</string>
+    <string name="access_not_granted_write">Not turned on: Modify system settings was not allowed.</string>
+
+    <string name="access_title_accessibility">Lock screen at end</string>
+    <string name="access_body_accessibility">Sleep Timer uses Android\'s accessibility service only to lock the screen when a timer ends and, if you turn it on, to go to the Home screen first. If you turn on Goodnight, it also uses it to draw a dark (optionally warm) layer over the screen and to lower the screen brightness through that layer.\n\nIt reads nothing on your screen, sees nothing you type, and sends nothing anywhere. The app has no internet access.\n\nThe screen is locked the same way the power button locks it, so your usual unlock (fingerprint, face, PIN) stays the same.\n\nNext: Android opens Accessibility settings. Tap Sleep Timer Trial there and turn it on. You can turn it off there at any time.</string>
+    <string name="access_hint_accessibility">If the switch there is greyed out (app installed from a file), open App info for Sleep Timer Trial, tap ⋮, choose Allow restricted settings, then try again.</string>
+    <string name="access_title_listener">Enhanced compatibility</string>
+    <string name="access_body_listener">Some players ignore the normal pause. With notification access, Sleep Timer can see which apps are playing and pause them directly when a timer ends.\n\nAndroid calls this Notification access, but Sleep Timer never reads, stores or reacts to your notifications. It only looks at whether each media player is playing, and sends nothing anywhere.\n\nNext: Android opens the Notification access page. Allow it for Sleep Timer Trial. You can turn it off there at any time.</string>
+    <string name="access_hint_listener">If the switch there is greyed out (app installed from a file), open App info for Sleep Timer Trial, tap ⋮, choose Allow restricted settings, then try again.</string>
+    <string name="access_title_write">Turn screen off sooner</string>
+    <string name="access_body_write">When a timer ends, Sleep Timer sets your screen timeout to 15 seconds, so the screen turns off soon after the pause. As soon as the screen is off, your own timeout is put back. If you change the timeout yourself in between, your choice is kept.\n\nNext: Android opens Modify system settings. Allow it for Sleep Timer Trial. You can turn it off there at any time.</string>
+    <string name="access_agree">Agree and open settings</string>
+    <string name="access_cancel">Cancel</string>
+
+    <string name="preset_lock">Lock screen at end</string>
+    <string name="preset_lock_needs_access">Not active: accessibility access for Sleep Timer is off. Choose On again to allow it.</string>
+    <string name="notification_status_screen_off">Screen turns off soon · then your screen timeout comes back</string>
+    <string name="try_result_session">Paused %1$s ✓ (session)</string>
+
+    <string name="accessibility_service_summary">Locks the screen when a sleep timer ends.</string>
+    <string name="accessibility_service_description">Lets Sleep Timer lock the screen (and go to the Home screen first, if you choose) when a timer ends, and draw a dark layer if you turn on Goodnight. It does not read or record anything on your screen.</string>
+
+    <!-- v2 P5: start of timer (DND, bedtime volume) and automatic start -->
+    <string name="settings_start_of_timer">Start of timer</string>
+    <string name="settings_dnd">Do Not Disturb at start</string>
+    <string name="settings_dnd_body">Turns on Do Not Disturb (your own priority settings, so alarms and the callers you allow still come through) until %1$s, and for at most 9 hours (so a daytime nap never silences your evening). Stopping the timer does not end it; end it early in the app or from the notification.</string>
+    <string name="settings_dnd_until">Until %1$s</string>
+    <string name="settings_bedtime_volume">Bedtime volume</string>
+    <string name="settings_bedtime_volume_body">At start, lowers the media volume to %1$d %% (never raises it). After the pause your earlier volume comes back, unless you changed it during the timer.</string>
+    <string name="settings_schedule">Start automatically</string>
+    <string name="settings_schedule_body">Starts a timer at this time on the chosen days, unless one is already running. No extra permission.</string>
+    <string name="settings_schedule_time">At %1$s</string>
+    <string name="settings_schedule_preset">Preset</string>
+    <string name="settings_schedule_next">Next: %1$s</string>
+    <string name="settings_schedule_no_days">Choose at least one day.</string>
+    <string name="settings_about_access_dnd">Do Not Disturb access: turns on your Do Not Disturb when a timer starts, until the morning time you set (at most 9 hours).</string>
+    <string name="access_title_dnd">Do Not Disturb at start</string>
+    <string name="access_body_dnd">When a timer starts, Sleep Timer turns on Do Not Disturb with its own rule called \"Sleep timer\". It uses your own priority settings, so your alarm still rings and the callers you allow still get through. It turns off at the morning time you choose (at most 9 hours after the start), or when you tap End Do Not Disturb.\n\nSleep Timer never reads your notifications and sends nothing anywhere.\n\nNext: Android opens Do Not Disturb access (called Modes access on newer Android). Allow it for Sleep Timer Trial. You can turn it off there at any time.</string>
+    <string name="access_lost_dnd">Turned off: Do Not Disturb (Modes) access for Sleep Timer is off.</string>
+    <string name="access_not_granted_dnd">Not turned on: Do Not Disturb access was not allowed.</string>
+    <string name="preset_dnd">Do Not Disturb at start</string>
+    <string name="preset_dnd_needs_access">Not active: Do Not Disturb access for Sleep Timer is off. Choose On again to allow it.</string>
+    <string name="preset_bedtime_volume">Bedtime volume</string>
+    <string name="dnd_rule_name">Sleep timer</string>
+    <string name="dnd_active_until">Do Not Disturb on until %1$s</string>
+    <string name="dnd_end">End Do Not Disturb</string>
+    <string name="notification_scheduled">Started automatically</string>
+    <string name="notification_schedule_tap">Time for your sleep timer (%1$s) · tap to start</string>
+
+    <string name="app_tagline">Stops your music, podcast or video after you fall asleep.</string>
+
+    <string name="try_result_media_key">Paused ✓ (media button)</string>
+    <string name="try_result_audio_focus">Paused ✓ (audio focus)</string>
+    <string name="try_result_mute_only">Could only mute — this player may keep playing</string>
+
+    <!-- v2 P6: Goodnight (SPEC F20, D21-D23, D42). Behaviour only (F8). -->
+    <string name="settings_goodnight">Goodnight</string>
+    <string name="settings_goodnight_switch">Dim the screen before the end</string>
+    <string name="settings_goodnight_body">During the last minutes before the fade, the screen dims step by step. It never gets brighter, and your own brightness comes back as soon as the screen is off (or at once when you tap Stop).</string>
+    <string name="settings_wind_down">Wind-down</string>
+    <string name="settings_goodnight_warmth">Warm tint</string>
+    <string name="settings_goodnight_warmth_body">Colours shift to a dark warm red while the screen dims.</string>
+    <string name="settings_goodnight_blackout">Blackout before lock</string>
+    <string name="settings_goodnight_blackout_body">After the pause, the screen goes almost black for a few seconds before it locks or turns off.</string>
+    <string name="settings_dim_using">Dim using</string>
+    <string name="settings_dim_both">Brightness + dark layer</string>
+    <string name="settings_dim_overlay">Dark layer only</string>
+    <string name="settings_dim_overlay_body">Choose Dark layer only if the screen ever looks brighter when the wind-down starts.</string>
+    <string name="settings_goodnight_needs_a11y">Needs the accessibility access used by Lock screen at end.</string>
+    <string name="settings_goodnight_now_window">Now: lowers the screen brightness through its dark layer (no system setting is changed).</string>
+    <string name="settings_goodnight_now_window_only">Now: dark layer only; the screen brightness is not touched.</string>
+    <string name="settings_goodnight_now_system">Now: lowers the system brightness (Modify system settings); no warm tint or dark layer without the accessibility access.</string>
+    <string name="settings_goodnight_now_none">Needs the accessibility access (Lock screen at end) or Modify system settings.</string>
+    <string name="preset_goodnight">Goodnight</string>
+    <string name="preset_goodnight_needs_access">Not active: Goodnight needs the accessibility access or Modify system settings. Choose On again to allow it.</string>
+    <string name="access_title_write_goodnight">Goodnight</string>
+    <string name="access_body_write_goodnight">Goodnight lowers your screen brightness step by step before the timer ends. As soon as the screen is off, your own brightness and auto-brightness setting are put back. If you change the brightness yourself in between, your choice is kept.\n\nWith the accessibility access from Lock screen at end, Goodnight does not need this: it then dims through its own dark layer instead.\n\nNext: Android opens Modify system settings. Allow it for Sleep Timer Trial. You can turn it off there at any time.</string>
+    <string name="access_lost_goodnight">Turned off: Goodnight needs the accessibility access or Modify system settings, and neither is allowed now.</string>
+    <string name="access_not_granted_goodnight">Not turned on: Goodnight needs Modify system settings or the accessibility access.</string>
+    <string name="notification_status_screen_off_goodnight">Screen turns off soon · then your brightness comes back</string>
+</resources>

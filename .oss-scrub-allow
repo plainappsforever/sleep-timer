@@ -1,0 +1,6 @@
+# .oss-scrub-allow - findings of scripts/oss/scrub-check.sh that a human checked and accepts (public file, no values).
+# Reviewed 2026-10-16 for the first public source release.
+P-PKGID README.md             # placeholder app id com.tim.*: the identifier changes before the first store release
+P-PKGID app/build.gradle.kts  # placeholder app id com.tim.*: the identifier changes before the first store release
+P-PKGID app/src/*             # placeholder app id com.tim.*: the identifier changes before the first store release
+P-PKGID fdroid/*              # placeholder app id com.tim.*: the identifier changes before the first store release

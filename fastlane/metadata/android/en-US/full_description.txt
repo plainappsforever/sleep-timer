@@ -1,0 +1,28 @@
+Sleep Timer stops what you are playing at the time you choose, so you can fall asleep to music, a podcast, an audiobook or a video without it running all night.
+
+Pick a duration (or "until 23:30") and tap Start. When the time is up, the volume fades down, then the app pauses the player, then it puts your volume back. Want to be sure before you fall asleep? "Try it now" runs a 3-second test on whatever is playing and tells you how it was stopped.
+
+WHAT IT DOES
+• Fade, then pause: it sends the media pause button first, then takes over audio focus. If a player ignores both, it mutes the volume and tells you that it could only mute.
+• Named presets (up to 8), each with its own fade length.
+• Notification with the end time and three buttons: -5 min, +15 min, End now.
+• Start from a Quick Settings tile, a home-screen widget or an app-icon shortcut.
+• Shake to extend in the last minutes (optional).
+• Automatic start every night at a time and on the days you choose (optional).
+• Bedtime volume: lowers the media volume when the timer starts, never raises it (optional).
+• Goodnight: the screen dims step by step before the end, never brighter, and your own brightness returns when the screen is off (optional).
+
+NO ADS, NO ACCOUNT, NO INTERNET
+The app has no internet permission, no ads, no analytics and no account. Your timers and settings stay on your phone.
+
+OPTIONAL SPECIAL ACCESS
+The timer itself needs none of these. Each one is asked for only when you switch on the feature that needs it, after a screen that explains why. You can say no and keep using the timer. You can turn any of them off again in Android Settings.
+• Accessibility (Lock screen at end; optionally go to the Home screen first; Goodnight's dark and warm layer): used only to lock the screen the way the power button does and to draw a dark layer. It does not read or record your screen or anything you type. Android shows its own standard warning for every accessibility service; this one is set up to read nothing.
+• Notification access (Enhanced compatibility): used only to see which media players are playing so they can be paused directly. The app never reads or stores your notifications.
+• Do Not Disturb access: turns on its own Do Not Disturb rule "Sleep timer" when a timer starts, until a morning time you set. Your alarm still rings.
+• Modify system settings: sets the screen timeout to 15 seconds after the pause, or lowers the brightness for Goodnight, and puts your values back once the screen is off.
+
+GOOD TO KNOW
+• Some players ignore every pause command. The app then mutes them and says so in its result notification.
+• Needs Android 8 or newer; locking the screen needs Android 9 or newer.
+• This is a timer for your media. It is not a sleep tracker and makes no health claims.

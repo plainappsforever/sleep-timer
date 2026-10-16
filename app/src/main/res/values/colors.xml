@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Home-screen widget palette: always the night look of the app (Theme.kt). -->
+    <color name="widget_bg">#FF161B3D</color>
+    <color name="widget_button">#FF2A3163</color>
+    <color name="widget_button_ripple">#33FFFFFF</color>
+    <color name="widget_accent">#FFFFD873</color>
+    <color name="widget_text">#FFEDEBFF</color>
+    <color name="widget_text_dim">#B3EDEBFF</color>
+</resources>

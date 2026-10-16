@@ -1,0 +1,29 @@
+Sleep Timer stoppt, was gerade läuft, zur gewählten Zeit. So schläfst du zu Musik, Podcast, Hörbuch oder Video ein, ohne dass es die ganze Nacht weiterläuft.
+
+Dauer wählen (oder "bis 23:30") und auf Start tippen. Ist die Zeit um, wird die Lautstärke ausgeblendet, danach pausiert die App den Player und stellt deine Lautstärke wieder her. Sicher sein, bevor du einschläfst? "Jetzt testen" macht einen 3-Sekunden-Test mit dem, was gerade läuft, und zeigt dir, wie es gestoppt wurde.
+
+WAS ES KANN
+• Ausblenden, dann pausieren: zuerst die Pause-Taste der Medien, dann der Audiofokus. Ignoriert ein Player beides, wird die Lautstärke stummgeschaltet und die App sagt dir, dass nur stummgeschaltet werden konnte.
+• Benannte Voreinstellungen (bis zu 8), jede mit eigener Ausblenddauer.
+• Benachrichtigung mit Endzeit und drei Tasten: -5 Min., +15 Min., Jetzt beenden.
+• Start über die Schnelleinstellungs-Kachel, das Startbildschirm-Widget oder die Verknüpfung am App-Symbol.
+• Schütteln zum Verlängern in den letzten Minuten (optional).
+• Automatischer Start jeden Abend zu einer Uhrzeit und an den gewählten Tagen (optional).
+• Schlafenszeit-Lautstärke: senkt die Medienlautstärke beim Start, erhöht sie nie (optional).
+• Gute Nacht: der Bildschirm wird vor dem Ende schrittweise dunkler, nie heller, und deine eigene Helligkeit kommt zurück, sobald der Bildschirm aus ist (optional).
+
+KEINE WERBUNG, KEIN KONTO, KEIN INTERNET
+Die App hat keine Internetberechtigung, keine Werbung, keine Analyse und kein Konto. Timer und Einstellungen bleiben auf deinem Handy.
+
+OPTIONALE SONDERZUGRIFFE
+Der Timer selbst braucht keinen davon. Jeder wird erst angefragt, wenn du die passende Funktion einschaltest, nach einem Bildschirm, der erklärt, wozu. Du kannst ablehnen und den Timer trotzdem nutzen. In den Android-Einstellungen kannst du jeden wieder ausschalten.
+• Bedienungshilfen (Bildschirm am Ende sperren; optional vorher zum Startbildschirm; dunkle und warme Ebene bei "Gute Nacht"): nur, um den Bildschirm wie die Ein-/Aus-Taste zu sperren und eine dunkle Ebene zu zeichnen. Die App liest oder speichert weder deinen Bildschirm noch Eingaben. Android zeigt bei jedem Bedienungshilfen-Dienst eine eigene Standardwarnung; dieser Dienst ist so eingerichtet, dass er nichts liest.
+• Benachrichtigungszugriff (Erweiterte Kompatibilität): nur, um zu sehen, welche Medien-Player gerade spielen, damit sie direkt pausiert werden können. Die App liest oder speichert deine Benachrichtigungen nie.
+• Zugriff auf "Nicht stören": schaltet beim Start eines Timers die eigene Regel "Sleep timer" ein, bis zu einer Morgenzeit, die du festlegst. Dein Wecker klingelt trotzdem.
+• Systemeinstellungen ändern: setzt nach der Pause die Bildschirm-Abschaltzeit auf 15 Sekunden oder senkt die Helligkeit für "Gute Nacht" und stellt deine Werte wieder her, sobald der Bildschirm aus ist.
+
+GUT ZU WISSEN
+• Manche Player ignorieren jeden Pause-Befehl. Die App schaltet sie dann stumm und sagt es dir in der Ergebnis-Benachrichtigung.
+• Benötigt Android 8 oder neuer; das Sperren des Bildschirms benötigt Android 9 oder neuer.
+• Die Bedienoberfläche der App ist derzeit nur auf Englisch verfügbar.
+• Dies ist ein Timer für deine Medien. Kein Schlaf-Tracker, keine Gesundheitsversprechen.

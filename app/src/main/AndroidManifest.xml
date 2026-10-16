@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <!-- v2.1 (REVIEW_V2 row 6): USE_EXACT_ALARM exists from API 33. On Android 12/12L (API 31-32) this one is
+         granted by default, so exact alarms (end, watchdog, nightly start) work there too; no Play declaration for
+         maxSdkVersion 32. targetSdk stays 36 (D34). -->
+    <uses-permission
+        android:name="android.permission.SCHEDULE_EXACT_ALARM"
+        android:maxSdkVersion="32" />
+    <!-- v2 P2: one 150 ms buzz confirming a shake-to-extend (normal permission, no prompt). -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- v2 P4: "Turn screen off sooner" (screen timeout 15 s at the end, restored once the screen is
+         off). A user grant in Settings ("Modify system settings"), asked only when that switch is on. -->
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <!-- v2 P5 (D19): "Do Not Disturb at start". A user grant in Settings ("Do Not Disturb access"),
+         asked only when that switch is turned on. -->
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <!-- v2 P5 (D20): re-arm the nightly start / our DND end after a reboot (normal permission, no prompt;
+         BootReceiver is disabled unless a schedule or our DND exists). -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- v2 P7 (D44): package visibility for player names only ("Paused Spotify" instead of a package name).
+         Two intents, no QUERY_ALL_PACKAGES: apps that answer the media button or are media-browser services. -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MEDIA_BUTTON" />
+        </intent>
+        <intent>
+            <action android:name="android.media.browse.MediaBrowserService" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".SleepTimerApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.SleepTimerTrial"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.SleepTimerTrial">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- v2 P5: configuration activity of our Do Not Disturb rule "Sleep timer" (opened from Android's
+                 Modes / DND settings). -->
+            <intent-filter>
+                <action android:name="android.app.action.AUTOMATIC_ZEN_RULE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".StartTrampolineActivity"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:excludeFromRecents="true"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name=".TimerService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Sleep timer countdown that fades and pauses media playback at the user-chosen time; optionally dims the screen step by step before the end, then locks the screen or briefly shortens the screen timeout, and puts brightness and timeout back once the screen is off" />
+        </service>
+
+        <receiver
+            android:name=".TimerAlarmReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name=".TimerActionReceiver"
+            android:exported="false" />
+
+        <!-- v2 P5 (D20): alarm 104, the nightly automatic start. -->
+        <receiver
+            android:name=".ScheduleReceiver"
+            android:exported="false" />
+
+        <!-- v2 P5 (D20): enabled with setComponentEnabledSetting only while a schedule, our DND, a Goodnight brightness
+             debt or (v2.1) an active run exists. -->
+        <receiver
+            android:name=".BootReceiver"
+            android:enabled="false"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".TimerTileService"
+            android:exported="true"
+            android:icon="@drawable/ic_tile_timer"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".TimerWidgetProvider"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/timer_widget_info" />
+        </receiver>
+
+        <!-- v2 P4 (D16): "Lock screen at end". Enabled only by the user in Accessibility settings after
+             the in-app disclosure; reads nothing (see accessibility_service_config.xml). -->
+        <service
+            android:name=".SleepAccessibilityService"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+        <!-- v2 P4 (D17): "Enhanced compatibility". Empty listener; exists only so getActiveSessions()
+             may list media sessions. Enabled only by the user in Notification access. -->
+        <service
+            android:name=".MediaListenerService"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>
