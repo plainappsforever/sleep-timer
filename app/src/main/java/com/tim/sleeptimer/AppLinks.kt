@@ -8,5 +8,5 @@ package com.tim.sleeptimer
  * store listing and inside the app (User Data policy).
  */
 object AppLinks {
-    const val PRIVACY_POLICY_URL = "https://taulon.org/sleep-timer/privacy"
+    const val PRIVACY_POLICY_URL = "https://plainapps.dfdsfdsfsdf.workers.dev/apps/sleep-timer/privacy"
 }
